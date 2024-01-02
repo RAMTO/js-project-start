@@ -18,7 +18,12 @@ const config: HardhatUserConfig = {
       url: 'https://arbitrum-sepolia.blockpi.network/v1/rpc/public',
       accounts: [process.env.WALLET_PRIVATE_KEY as string],
     },
-    // Arbitrum Sepolia Testnet
+    // Base Mainet
+    base: {
+      url: 'https://base.llamarpc.com',
+      accounts: [process.env.WALLET_PRIVATE_KEY as string],
+    },
+    // Base Sepolia Testnet
     sepoliaBase: {
       url: 'https://base-sepolia.blockpi.network/v1/rpc/public',
       accounts: [process.env.WALLET_PRIVATE_KEY as string],
