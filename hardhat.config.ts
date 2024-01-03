@@ -33,6 +33,11 @@ const config: HardhatUserConfig = {
       url: 'https://linea-goerli.blockpi.network/v1/rpc/public',
       accounts: [process.env.WALLET_PRIVATE_KEY as string],
     },
+    // Taiko Testnet
+    taiko: {
+      url: 'https://taiko-jolnir.blockpi.network/v1/rpc/public',
+      accounts: [process.env.WALLET_PRIVATE_KEY as string],
+    },
   },
 };
 
