@@ -13,6 +13,11 @@ const config: HardhatUserConfig = {
     },
   },
   networks: {
+    // Arbitrum Mainnet
+    arbitrum: {
+      url: 'https://arbitrum.llamarpc.com',
+      accounts: [process.env.WALLET_PRIVATE_KEY as string],
+    },
     // Arbitrum Sepolia Testnet
     sepoliaArb: {
       url: 'https://arbitrum-sepolia.blockpi.network/v1/rpc/public',
